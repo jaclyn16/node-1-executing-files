@@ -14,5 +14,16 @@ const inputString = "Javascript Rocks!";
 let reversedString = "";
 
 // Your code here
-
+for (let i = inputString.length - 1; i >= 0; i--) {
+    reversedString += inputString[i];
+}
 console.log(reversedString);
+
+// this loop is starting at the end of the string and moves backwards..
+// adding each character to a new string to reverse it.
+
+// the let i= inputString.length -1, tells how many characters in the string, so we 
+// start at 1 to start at last letter/character.
+// i>=0, means to keep going as long as dont past 1st letter. when i = -i loop stops
+// i-- go backwards one step ea time.. we are counting down NOT up!
+// the reversedString += inputString takes current letter and add to new string.
